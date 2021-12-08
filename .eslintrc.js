@@ -23,7 +23,7 @@ module.exports = {
                 asyncArrow: "always"
             }
         ],
-        "multiline-ternary": "always",
+        "multiline-ternary": "never",
         quotes: ["error", "double", { allowTemplateLiterals: true }],
         "react/no-unescaped-entities": 0
     }
