@@ -1,3 +1,5 @@
+@import "../../constants.scss";
+
 .catalog-container {
     max-width: 1280px;
     min-width: 320px;
@@ -11,6 +13,10 @@
         font-weight: bold;
         text-decoration: none;
         line-height: 1.2;
+
+        @media (max-width: $phoneMaxWidth) {
+            font-size: 24px;
+        }
     }
 }
 
@@ -21,8 +27,18 @@
         display: flex;
         margin-bottom: 30px;
         padding: 30px 27px;
-        border: 1px solid #ebebeb;
+        border: 1px solid $borderCatalogBox;
         border-radius: 3px;
+
+        @media (max-width: $phoneMaxWidth) {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        a {
+            color: $blackColor;
+            text-decoration: none;
+        }
     }
 
     &__img {
@@ -30,9 +46,18 @@
         vertical-align: middle;
         margin-right: 20px;
 
+        @media (max-width: $phoneMaxWidth) {
+            margin: auto;
+        }
+
         img {
             width: 270px;
             height: 270px;
+
+            @media (max-width: $phoneMaxWidth) {
+                width: 200px;
+                height: 200px;
+            }
         }
     }
 
@@ -45,6 +70,10 @@
         margin-bottom: 24px;
         font-size: 22px;
         font-weight: 600;
+
+        @media (max-width: $phoneMaxWidth) {
+            font-size: 18px;
+        }
     }
 
     &__text {
@@ -60,8 +89,8 @@
         width: 100%;
         max-width: 250px;
         height: auto;
-        background: #7f9d64 0 0 no-repeat;
-        color: #fff;
+        background: $formGreenColor 0 0 no-repeat;
+        color: $whiteColor;
         border: 0;
         overflow: hidden;
         cursor: pointer;

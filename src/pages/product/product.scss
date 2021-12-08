@@ -1,3 +1,5 @@
+@import "../../constants.scss";
+
 .product-container {
     max-width: 1280px;
     min-width: 320px;
@@ -11,12 +13,21 @@
         font-weight: bold;
         text-decoration: none;
         line-height: 1.2;
+
+        @media screen and (max-device-width: $phoneMaxWidth) {
+            font-size: 24px;
+        }
     }
 
     &__item {
         display: flex;
         margin-bottom: 30px;
         padding: 30px 27px;
+
+        @media screen and (max-device-width: 1150px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__photo-container {
@@ -25,6 +36,15 @@
         width: 410px;
         height: 410px;
 
+        @media screen and (max-device-width: 1150px) {
+            margin-bottom: 140px;
+        }
+
+        @media screen and (max-device-width: $phoneMaxWidth) {
+            width: 300px;
+            height: 300px;
+        }
+
         img {
             width: 85px;
         }
@@ -32,6 +52,12 @@
 
     &__content {
         max-width: 670px;
+
+        @media screen and (max-device-width: $phoneMaxWidth) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__text {
@@ -46,6 +72,11 @@
         line-height: 26px;
         padding-bottom: 40px;
 
+        @media screen and (max-device-width: $phoneMaxWidth) {
+            width: 100%;
+            text-align: center;
+        }
+
         span {
             font-size: 30px;
         }
@@ -58,10 +89,9 @@
         width: 100%;
         max-width: 250px;
         height: auto;
-        background: #7f9d64 0 0 no-repeat;
-        color: #fff;
+        background: $formGreenColor 0 0 no-repeat;
+        color: $whiteColor;
         border: 0;
-        overflow: hidden;
         cursor: pointer;
         box-sizing: border-box;
         text-decoration: none;
@@ -71,8 +101,13 @@
         font-size: 16px;
         margin-right: 30px;
 
+        @media screen and (max-device-width: $phoneMaxWidth) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
         &--download {
-            background: #cdbd84;
+            background: $benefitsNum;
         }
     }
 }
@@ -86,30 +121,50 @@
     }
 }
 
+.slick-prev::before,
+.slick-next::before {
+    color: $blackColor !important;
+}
+
+.nav {
+    @media screen and (max-device-width: $phoneMaxWidth) {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .nav-item > .active {
-    background-color: #cdbd84 !important;
+    background-color: $benefitsNum !important;
     border-radius: 3px;
-    color: #fff !important;
+    color: $whiteColor !important;
 }
 
 .nav-link {
-    color: #fff;
+    color: $whiteColor;
+
+    @media screen and (max-device-width: $phoneMaxWidth) {
+        width: 250px;
+    }
 }
 
 .nav-item {
-    background: #cacaca;
+    background: $navBg;
     border-radius: 3px 3px 0 0;
 
+    @media screen and (max-device-width: $phoneMaxWidth) {
+        margin: 10px auto;
+    }
+
     :hover {
-        background-color: #cdbd84 !important;
-        color: #fff !important;
+        background-color: $benefitsNum !important;
+        color: $whiteColor !important;
     }
 }
 
 td,
 tr,
 th {
-    border-right: 1px solid #dcdcdc;
+    border-right: 1px solid $borderTableColor;
 }
 
 .no-border-right {
@@ -117,10 +172,16 @@ th {
 }
 
 .tab-content--table {
-    border: 1px solid #cdbd84;
+    border: 1px solid $benefitsNum;
     box-sizing: border-box;
     border-radius: 0 3px 3px 3px;
     margin-bottom: 80px;
+    overflow-x: scroll;
+}
+
+.tab-content--table::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
 
 .info-container {

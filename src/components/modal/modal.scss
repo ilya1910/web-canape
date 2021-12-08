@@ -1,0 +1,58 @@
+@import "../../constants.scss";
+
+.modal {
+    &__wrapper {
+        display: none;
+
+        @media (max-width: $phoneMaxWidth) {
+            display: block;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: $whiteColor;
+            z-index: 3;
+        }
+    }
+
+    &__body {
+        width: 100%;
+        padding: 20px;
+        max-height: 400px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 240px;
+    }
+
+    &__menu {
+        width: 130px;
+        margin-bottom: 40px;
+    }
+
+    &__phone {
+        margin-bottom: 20px;
+    }
+
+    &__email {
+        margin-bottom: 20px;
+    }
+
+    &__close {
+        text-align: right;
+        margin-top: -15px;
+        cursor: pointer;
+    }
+}
+
+.modal__wrapper .open {
+    display: block;
+    height: 100%;
+}
+
+.modal__wrapper.close {
+    display: none;
+    height: 0;
+}

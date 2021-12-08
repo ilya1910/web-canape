@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./form.scss";
 
 const Form = () => {
+    const [inputValue, setInputValue] = useState();
+
+    const handleChange = () => {
+        setInputValue(inputValue);
+    };
+
     return (
         <div className="container-fluid">
             <div className="col-xs-12">
@@ -12,25 +18,25 @@ const Form = () => {
                     <div className="form-input-container">
                         <input
                             name="fio"
-                            value=""
+                            value={inputValue}
                             type="text"
                             placeholder="ФИО"
-                            defaultValue=""
+                            onChange={handleChange}
                         ></input>
                         <input
                             name="telefon"
-                            value=""
+                            value={inputValue}
                             type="tel"
                             placeholder="Телефон*"
                             data-mask="phone"
-                            defaultValue=""
+                            onChange={handleChange}
                         ></input>
                         <input
                             name="e-mail"
-                            value=""
+                            value={inputValue}
                             type="email"
                             placeholder="E-mail*"
-                            defaultValue=""
+                            onChange={handleChange}
                         ></input>
                     </div>
 

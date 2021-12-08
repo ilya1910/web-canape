@@ -8,7 +8,10 @@ export default function SimpleSlider() {
         customPaging: function(i) {
             return (
                 <a>
-                    <img src={`../../img/catalog/product-${i + 1}.jpg`} />
+                    <img
+                        src={`../../img/catalog/product-${i + 1}.jpg`}
+                        alt=""
+                    />
                 </a>
             );
         },
@@ -22,9 +25,9 @@ export default function SimpleSlider() {
     return (
         <>
             <Slider {...settings}>
-                <img src={"../../img/catalog/product-1.jpg"} />
-                <img src={"../../img/catalog/product-2.jpg"} />
-                <img src={"../../img/catalog/product-3.jpg"} />
+                <img src={"../../img/catalog/product-1.jpg"} alt="" />
+                <img src={"../../img/catalog/product-2.jpg"} alt="" />
+                <img src={"../../img/catalog/product-3.jpg"} alt="" />
             </Slider>
         </>
     );

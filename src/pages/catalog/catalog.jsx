@@ -45,7 +45,7 @@ const Сatalog = () => {
                                 У10-РМБ"
                             />
                         </div>
-                        <Link to="/product">
+                        <Link to="/catalog/product">
                             <div className="catalog-box__content">
                                 <div className="catalog-box__title">
                                     Автомобилеразгрузчик У15-УРАГ

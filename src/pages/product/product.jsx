@@ -8,6 +8,21 @@ import Table from "./modules/table";
 import Slider from "../../components/slider/slider";
 
 const Product = () => {
+    const lorem = ` Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat vel sapiente, officia sit, praesentium molestiae
+                    quaerat deserunt porro ullam aut natus explicabo totam
+                    voluptate consequuntur, commodi eaque obcaecati. Hic
+                    quibusdam numquam expedita harum omnis, minus molestiae
+                    placeat alias repellendus nesciunt amet consequatur
+                    pariatur officia doloremque animi illum delectus
+                    eligendi velit mollitia nihil commodi fugit unde ut
+                    saepe! Quo debitis voluptates soluta atque, sit
+                    provident tempora ab molestias vitae architecto dolore
+                    numquam. Ex commodi odio doloremque cumque distinctio
+                    doloribus totam voluptatem nemo praesentium pariatur,
+                    omnis id quaerat saepe, voluptates, alias unde ad velit
+                    dicta! Corrupti ea accusantium, numquam dolor eius in.`;
+
     return (
         <>
             <Header />
@@ -163,20 +178,7 @@ const Product = () => {
                         role="tabpanel"
                         aria-labelledby="operating-principle-tab"
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat vel sapiente, officia sit, praesentium molestiae
-                        quaerat deserunt porro ullam aut natus explicabo totam
-                        voluptate consequuntur, commodi eaque obcaecati. Hic
-                        quibusdam numquam expedita harum omnis, minus molestiae
-                        placeat alias repellendus nesciunt amet consequatur
-                        pariatur officia doloremque animi illum delectus
-                        eligendi velit mollitia nihil commodi fugit unde ut
-                        saepe! Quo debitis voluptates soluta atque, sit
-                        provident tempora ab molestias vitae architecto dolore
-                        numquam. Ex commodi odio doloremque cumque distinctio
-                        doloribus totam voluptatem nemo praesentium pariatur,
-                        omnis id quaerat saepe, voluptates, alias unde ad velit
-                        dicta! Corrupti ea accusantium, numquam dolor eius in.
+                        {lorem}
                     </div>
                     <div
                         className="tab-pane fade"
@@ -184,20 +186,7 @@ const Product = () => {
                         role="tabpanel"
                         aria-labelledby="advantages-tab"
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat vel sapiente, officia sit, praesentium molestiae
-                        quaerat deserunt porro ullam aut natus explicabo totam
-                        voluptate consequuntur, commodi eaque obcaecati. Hic
-                        quibusdam numquam expedita harum omnis, minus molestiae
-                        placeat alias repellendus nesciunt amet consequatur
-                        pariatur officia doloremque animi illum delectus
-                        eligendi velit mollitia nihil commodi fugit unde ut
-                        saepe! Quo debitis voluptates soluta atque, sit
-                        provident tempora ab molestias vitae architecto dolore
-                        numquam. Ex commodi odio doloremque cumque distinctio
-                        doloribus totam voluptatem nemo praesentium pariatur,
-                        omnis id quaerat saepe, voluptates, alias unde ad velit
-                        dicta! Corrupti ea accusantium, numquam dolor eius in.
+                        {lorem}
                     </div>
                     <div
                         className="tab-pane fade"
@@ -205,20 +194,7 @@ const Product = () => {
                         role="tabpanel"
                         aria-labelledby="certificates-tab"
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat vel sapiente, officia sit, praesentium molestiae
-                        quaerat deserunt porro ullam aut natus explicabo totam
-                        voluptate consequuntur, commodi eaque obcaecati. Hic
-                        quibusdam numquam expedita harum omnis, minus molestiae
-                        placeat alias repellendus nesciunt amet consequatur
-                        pariatur officia doloremque animi illum delectus
-                        eligendi velit mollitia nihil commodi fugit unde ut
-                        saepe! Quo debitis voluptates soluta atque, sit
-                        provident tempora ab molestias vitae architecto dolore
-                        numquam. Ex commodi odio doloremque cumque distinctio
-                        doloribus totam voluptatem nemo praesentium pariatur,
-                        omnis id quaerat saepe, voluptates, alias unde ad velit
-                        dicta! Corrupti ea accusantium, numquam dolor eius in.
+                        {lorem}
                     </div>
                     <div
                         className="tab-pane fade"
@@ -226,20 +202,7 @@ const Product = () => {
                         role="tabpanel"
                         aria-labelledby="video-tab"
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat vel sapiente, officia sit, praesentium molestiae
-                        quaerat deserunt porro ullam aut natus explicabo totam
-                        voluptate consequuntur, commodi eaque obcaecati. Hic
-                        quibusdam numquam expedita harum omnis, minus molestiae
-                        placeat alias repellendus nesciunt amet consequatur
-                        pariatur officia doloremque animi illum delectus
-                        eligendi velit mollitia nihil commodi fugit unde ut
-                        saepe! Quo debitis voluptates soluta atque, sit
-                        provident tempora ab molestias vitae architecto dolore
-                        numquam. Ex commodi odio doloremque cumque distinctio
-                        doloribus totam voluptatem nemo praesentium pariatur,
-                        omnis id quaerat saepe, voluptates, alias unde ad velit
-                        dicta! Corrupti ea accusantium, numquam dolor eius in.
+                        {lorem}
                     </div>
                 </div>
             </div>

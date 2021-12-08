@@ -17,7 +17,7 @@ const Main = () => {
                     <div className="slider-container">
                         <div className="slider-container__navbar">
                             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                                <div>123</div>
+                                <div style={{ display: "none" }}>123</div>
                             </nav>
                         </div>
                         <div className="slider-container__header">

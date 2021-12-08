@@ -1,3 +1,5 @@
+@import "../../constants.scss";
+
 body {
     margin: 0;
     font-family: Montserrat;
@@ -22,7 +24,7 @@ body {
         height: 400px;
     }
 
-    @media screen and (max-device-width: 768px) {
+    @media screen and (max-device-width: $phoneMaxWidth) {
         height: 185px;
     }
 
@@ -38,7 +40,7 @@ body {
             line-height: 69px;
         }
 
-        @media screen and (max-device-width: 768px) {
+        @media screen and (max-device-width: $phoneMaxWidth) {
             font-size: 25px;
             line-height: 30px;
         }
@@ -49,14 +51,14 @@ body {
         font-weight: 500;
         font-size: 26px;
         line-height: 40px;
-        color: #fff;
+        color: $whiteColor;
 
         @media screen and (max-device-width: 1200px) {
             font-size: 20px;
             line-height: 36px;
         }
 
-        @media screen and (max-device-width: 768px) {
+        @media screen and (max-device-width: $phoneMaxWidth) {
             font-size: 15px;
             line-height: 24px;
         }
@@ -95,7 +97,7 @@ body {
             line-height: 46px;
         }
 
-        @media screen and (max-device-width: 768px) {
+        @media screen and (max-device-width: $phoneMaxWidth) {
             text-align: center;
             font-size: 26px;
             line-height: 32px;
@@ -129,7 +131,7 @@ body {
             width: 33%;
         }
 
-        @media screen and (max-device-width: 768px) {
+        @media screen and (max-device-width: $phoneMaxWidth) {
             width: 100%;
         }
     }
@@ -139,7 +141,7 @@ body {
         font-weight: bold;
         font-size: 24px;
         line-height: 1.2;
-        color: #cdbd84;
+        color: $benefitsNum;
         font-size: 80px;
 
         p {
@@ -230,7 +232,7 @@ body {
         background: none;
         margin-bottom: 30px;
 
-        @media screen and (max-device-width: 768px) {
+        @media screen and (max-device-width: $phoneMaxWidth) {
             width: 100%;
         }
     }
@@ -267,7 +269,7 @@ body {
         font-weight: 600;
         font-size: 22px;
         line-height: 27px;
-        color: #69a54d;
+        color: $titleText;
         margin-bottom: 20px;
     }
 
@@ -289,7 +291,7 @@ body {
         box-sizing: border-box;
         width: 30%;
 
-        @media screen and (max-device-width: 768px) {
+        @media screen and (max-device-width: $phoneMaxWidth) {
             width: 100%;
         }
     }
@@ -301,7 +303,7 @@ body {
         font-weight: 600;
         text-decoration: none;
         text-transform: none;
-        color: #69a54d;
+        color: $titleText;
         word-wrap: break-word;
         width: 320px;
     }
@@ -317,7 +319,7 @@ body {
         font-weight: 600;
         text-decoration: none;
         text-transform: none;
-        color: #cac1a0;
+        color: $dateColor;
         line-height: 1.214;
     }
 
